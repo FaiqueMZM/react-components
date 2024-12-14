@@ -1,5 +1,6 @@
 import "./App.css";
 import DefaultNav from "./components/NabBar/DefaultNav";
+import StickyNav from "./components/NabBar/StickyNav";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <p className="text-3xl">React Mock App</p>
       </div>
       <DefaultNav />
+      <StickyNav />
     </>
   );
 }
