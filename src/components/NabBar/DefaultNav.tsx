@@ -4,14 +4,14 @@ import logo from "../../assets/react.svg";
 
 const DefaultNav: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Added state for mobile menu toggle
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
   const toggleMobileMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle mobile menu visibility
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -39,7 +39,7 @@ const DefaultNav: React.FC = () => {
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
-            } md:block w-full md:w-auto`} // Conditionally render the menu based on the state
+            } md:block w-full md:w-auto`}
           >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
               <li>
