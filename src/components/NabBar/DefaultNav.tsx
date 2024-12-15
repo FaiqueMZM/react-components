@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import logo from "../../assets/react.svg";
 
 const DefaultNav: React.FC = () => {
@@ -35,7 +35,11 @@ const DefaultNav: React.FC = () => {
             onClick={toggleMobileMenu}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="w-5 h-5" aria-hidden="true" />
+            {isMenuOpen ? (
+              <XMarkIcon className="w-5 h-5" aria-hidden="true" />
+            ) : (
+              <Bars3Icon className="w-5 h-5" aria-hidden="true" />
+            )}
           </button>
           <div
             className={`${
@@ -75,6 +79,12 @@ const DefaultNav: React.FC = () => {
                 </button>
                 {isDropdownOpen && (
                   <div className="absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                    <button
+                      className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      <XMarkIcon className="w-5 h-5" />
+                    </button>
                     <ul
                       className="py-2 text-sm text-gray-700"
                       aria-labelledby="dropdownNavbarLink"
@@ -104,14 +114,6 @@ const DefaultNav: React.FC = () => {
                         </a>
                       </li>
                     </ul>
-                    <div className="py-1">
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        Sign out
-                      </a>
-                    </div>
                   </div>
                 )}
               </li>
