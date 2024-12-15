@@ -16,6 +16,7 @@ const DefaultNav: React.FC = () => {
 
   return (
     <>
+      <div>1. Default NavBar</div>
       <nav className="bg-white border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
@@ -31,7 +32,7 @@ const DefaultNav: React.FC = () => {
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-expanded={isMenuOpen ? "true" : "false"}
-            onClick={toggleMobileMenu} // Toggle mobile menu visibility
+            onClick={toggleMobileMenu}
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon className="w-5 h-5" aria-hidden="true" />
