@@ -11,7 +11,9 @@ const StickyNav: React.FC = () => {
 
   return (
     <>
-      <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+      <div>2. Sticky NavBar</div>
+      {/* add fixed , top-0 to be sticky */}
+      <nav className="bg-white  w-full z-20  start-0 border-b border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
