@@ -16,7 +16,6 @@ const DefaultNav: React.FC = () => {
 
   return (
     <>
-      <div>1. Default NavBar</div>
       <nav className="bg-white border-gray-200">
         <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a

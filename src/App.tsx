@@ -1,17 +1,23 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import NavbarPage from "./pages/NavBarPage";
+import HomePage from "./pages/HomePage";
 import "./App.css";
-import DefaultNav from "./components/NavBar/DefaultNav";
-import StickyNav from "./components/NavBar/StickyNav";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <div className="flex justify-center">
-        <p className="text-3xl">React Mock App</p>
+    <Router>
+      <div>
+        <Routes>
+          {/* Home Page */}
+          <Route path="/" element={<HomePage />} />
+
+          {/* Navbar Variations */}
+          <Route path="/navbars/:variation" element={<NavbarPage />} />
+        </Routes>
       </div>
-      <DefaultNav />
-      <StickyNav />
-    </>
+    </Router>
   );
-}
+};
 
 export default App;
