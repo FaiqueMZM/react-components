@@ -1,5 +1,5 @@
 import React from "react";
-import { DefaultNav, StickyNav } from "../components/NavBar";
+import { DefaultNav, StickyNav, TransparentNav } from "../components/NavBar";
 import { useParams } from "react-router-dom";
 
 const NavbarPage: React.FC = () => {
@@ -10,6 +10,8 @@ const NavbarPage: React.FC = () => {
       return <DefaultNav />;
     case "sticky":
       return <StickyNav />;
+    case "transparent":
+      return <TransparentNav />;
     default:
       return (
         <div className="text-red-500 text-center mt-4">
