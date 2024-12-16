@@ -1,6 +1,6 @@
 import "./App.css";
-import DefaultNav from "./components/NabBar/DefaultNav";
-import StickyNav from "./components/NabBar/StickyNav";
+import DefaultNav from "./components/NavBar/DefaultNav";
+import StickyNav from "./components/NavBar/StickyNav";
 
 function App() {
   return (
