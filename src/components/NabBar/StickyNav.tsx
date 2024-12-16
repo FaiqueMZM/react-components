@@ -12,7 +12,7 @@ const StickyNav: React.FC = () => {
   return (
     <>
       <div>2. Sticky NavBar</div>
-      {/* add top-0 , start-0 to be sticky at top */}
+      {/* add top-0, start-0 to make it sticky */}
       <nav className="bg-white fixed w-full z-20  border-b border-gray-200">
         <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
@@ -46,9 +46,9 @@ const StickyNav: React.FC = () => {
             </button>
           </div>
           <div
-            className={`${
-              isMenuOpen ? "block" : "hidden"
-            } items-center justify-between w-full md:flex md:w-auto md:order-1`}
+            className={`overflow-hidden transition-all duration-1000 ease-in-out ${
+              isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+            } md:block md:max-h-none md:opacity-100 w-full md:w-auto md:order-1`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">

@@ -42,9 +42,9 @@ const DefaultNav: React.FC = () => {
             )}
           </button>
           <div
-            className={`${
-              isMenuOpen ? "block" : "hidden"
-            } md:block w-full md:w-auto`}
+            className={`overflow-hidden transition-all duration-1000 ease-in-out ${
+              isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+            } md:block md:max-h-none md:opacity-100 w-full md:w-auto`}
           >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
               <li>
