@@ -3,21 +3,22 @@ import { Link } from "react-router-dom";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-4">Welcome to Component Showcase</h1>
+    <div className="m-4">
+      <h1 className="text-3xl font-bold mb-4">React Components</h1>
       <p className="mb-4">
         Explore different variations of components in this project. Select a
         component below to view its variations.
       </p>
+      <h3 className="text-2xl mb-4">Navigation Bars</h3>
       <ul className="list-disc ml-8">
         <li>
           <Link to="/navbars/default" className="text-blue-500 hover:underline">
-            Navbar - Default
+            Default
           </Link>
         </li>
         <li>
           <Link to="/navbars/sticky" className="text-blue-500 hover:underline">
-            Navbar - Sticky
+            Sticky
           </Link>
         </li>
         <li>
@@ -25,7 +26,7 @@ const HomePage: React.FC = () => {
             to="/navbars/transparent"
             className="text-blue-500 hover:underline"
           >
-            Navbar - Transparent
+            Transparent
           </Link>
         </li>
       </ul>
