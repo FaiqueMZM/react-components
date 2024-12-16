@@ -7,11 +7,11 @@ const DefaultNav: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+    setIsDropdownOpen((prev) => !prev); // Toggle dropdown state
   };
 
   const toggleMobileMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev); // Toggle mobile menu state
   };
 
   return (
@@ -30,7 +30,7 @@ const DefaultNav: React.FC = () => {
           </a>
           <button
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none"
             aria-expanded={isMenuOpen ? "true" : "false"}
             onClick={toggleMobileMenu}
           >
@@ -42,7 +42,7 @@ const DefaultNav: React.FC = () => {
             )}
           </button>
           <div
-            className={`overflow-hidden transition-all duration-1000 ease-in-out ${
+            className={` transition-all duration-1000 ease-in-out ${
               isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
             } md:block md:max-h-none md:opacity-100 w-full md:w-auto`}
           >
@@ -59,7 +59,7 @@ const DefaultNav: React.FC = () => {
               <li className="relative">
                 <button
                   onClick={toggleDropdown}
-                  className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                  className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >
                   Dropdown{" "}
                   <svg
@@ -78,13 +78,7 @@ const DefaultNav: React.FC = () => {
                   </svg>
                 </button>
                 {isDropdownOpen && (
-                  <div className="absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                    <button
-                      className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
-                      onClick={() => setIsDropdownOpen(false)}
-                    >
-                      <XMarkIcon className="w-5 h-5" />
-                    </button>
+                  <div className="absolute z-50 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2">
                     <ul
                       className="py-2 text-sm text-gray-700"
                       aria-labelledby="dropdownNavbarLink"
