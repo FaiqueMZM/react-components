@@ -7,11 +7,11 @@ const DefaultNav: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setIsDropdownOpen((prev) => !prev); // Toggle dropdown state
+    setIsDropdownOpen((prev) => !prev);
   };
 
   const toggleMobileMenu = () => {
-    setIsMenuOpen((prev) => !prev); // Toggle mobile menu state
+    setIsMenuOpen((prev) => !prev);
   };
 
   return (
@@ -78,7 +78,7 @@ const DefaultNav: React.FC = () => {
                   </svg>
                 </button>
                 {isDropdownOpen && (
-                  <div className="absolute z-50 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2">
+                  <div className="absolute z-50 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-50 mt-2">
                     <ul
                       className="py-2 text-sm text-gray-700"
                       aria-labelledby="dropdownNavbarLink"
