@@ -40,6 +40,14 @@ const HomePage: React.FC = () => {
                 Default
               </Link>
             </li>
+            <li>
+              <Link
+                to="/botnavbar/rounded"
+                className="text-blue-500 hover:underline"
+              >
+                Rounded
+              </Link>
+            </li>
           </ul>
         </li>
       </ul>

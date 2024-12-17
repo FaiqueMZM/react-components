@@ -1,5 +1,5 @@
 import React from "react";
-import { DefaultBotNav } from "../components/BottomNavBar";
+import { DefaultBotNav, RoundedBotNav } from "../components/BottomNavBar";
 import { useParams } from "react-router-dom";
 
 const BotNavBarPage: React.FC = () => {
@@ -8,6 +8,8 @@ const BotNavBarPage: React.FC = () => {
   switch (variation) {
     case "default":
       return <DefaultBotNav />;
+    case "rounded":
+      return <RoundedBotNav />;
     default:
       return (
         <div className="text-red-500 text-center mt-4">
