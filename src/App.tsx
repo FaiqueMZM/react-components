@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import NavbarPage from "./pages/NavBarPage";
+import BotNavbarPage from "./pages/BotNavBarPage";
 import HomePage from "./pages/HomePage";
 import "./App.css";
 
@@ -14,6 +15,7 @@ const App: React.FC = () => {
 
           {/* Navbar Variations */}
           <Route path="/navbar/:variation" element={<NavbarPage />} />
+          <Route path="/botnavbar/:variation" element={<BotNavbarPage />} />
         </Routes>
       </div>
     </Router>

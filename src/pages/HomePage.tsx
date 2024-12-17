@@ -29,6 +29,19 @@ const HomePage: React.FC = () => {
             Transparent
           </Link>
         </li>
+        <li>
+          Bottom Navbars
+          <ul className="list-disc list-inside">
+            <li>
+              <Link
+                to="/botnavbar/default"
+                className="text-blue-500 hover:underline"
+              >
+                Default
+              </Link>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   );
