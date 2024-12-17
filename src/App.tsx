@@ -13,7 +13,7 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
 
           {/* Navbar Variations */}
-          <Route path="/navbars/:variation" element={<NavbarPage />} />
+          <Route path="/navbar/:variation" element={<NavbarPage />} />
         </Routes>
       </div>
     </Router>

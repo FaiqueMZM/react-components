@@ -12,18 +12,18 @@ const HomePage: React.FC = () => {
       <h3 className="text-2xl mb-4">Navigation Bars</h3>
       <ul className="list-disc ml-8">
         <li>
-          <Link to="/navbars/default" className="text-blue-500 hover:underline">
+          <Link to="/navbar/default" className="text-blue-500 hover:underline">
             Default
           </Link>
         </li>
         <li>
-          <Link to="/navbars/sticky" className="text-blue-500 hover:underline">
+          <Link to="/navbar/sticky" className="text-blue-500 hover:underline">
             Sticky
           </Link>
         </li>
         <li>
           <Link
-            to="/navbars/transparent"
+            to="/navbar/transparent"
             className="text-blue-500 hover:underline"
           >
             Transparent
