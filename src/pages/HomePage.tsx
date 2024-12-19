@@ -57,6 +57,21 @@ const HomePage: React.FC = () => {
         </ul>
       </div>
       <div className="my-4">
+        <h3 className="text-2xl mb-4">Stats</h3>
+        <ul className="list-disc ml-8">
+          <li>
+            <Link to="/stats/default" className="text-blue-500 hover:underline">
+              Default
+            </Link>
+          </li>
+          <li>
+            <Link to="/stats/simple" className="text-blue-500 hover:underline">
+              Simple
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="my-4">
         <h3 className="text-2xl mb-4">Footers</h3>
         <ul className="list-disc ml-8">
           <li>
