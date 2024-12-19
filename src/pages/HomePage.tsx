@@ -67,6 +67,11 @@ const HomePage: React.FC = () => {
               Default
             </Link>
           </li>
+          <li>
+            <Link to="/footer/simple" className="text-blue-500 hover:underline">
+              Simple
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
