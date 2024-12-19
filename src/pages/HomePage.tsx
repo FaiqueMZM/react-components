@@ -9,48 +9,66 @@ const HomePage: React.FC = () => {
         Explore different variations of components in this project. Select a
         component below to view its variations.
       </p>
-      <h3 className="text-2xl mb-4">Navigation Bars</h3>
-      <ul className="list-disc ml-8">
-        <li>
-          <Link to="/navbar/default" className="text-blue-500 hover:underline">
-            Default
-          </Link>
-        </li>
-        <li>
-          <Link to="/navbar/sticky" className="text-blue-500 hover:underline">
-            Sticky
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/navbar/transparent"
-            className="text-blue-500 hover:underline"
-          >
-            Transparent
-          </Link>
-        </li>
-        <li>
-          Bottom Navbars
-          <ul className="list-disc list-inside">
-            <li>
-              <Link
-                to="/botnavbar/default"
-                className="text-blue-500 hover:underline"
-              >
-                Default
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/botnavbar/rounded"
-                className="text-blue-500 hover:underline"
-              >
-                Rounded
-              </Link>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <div className="my-4">
+        <h3 className="text-2xl mb-4">Navigation Bars</h3>
+        <ul className="list-disc ml-8">
+          <li>
+            <Link
+              to="/navbar/default"
+              className="text-blue-500 hover:underline"
+            >
+              Default
+            </Link>
+          </li>
+          <li>
+            <Link to="/navbar/sticky" className="text-blue-500 hover:underline">
+              Sticky
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/navbar/transparent"
+              className="text-blue-500 hover:underline"
+            >
+              Transparent
+            </Link>
+          </li>
+          <li>
+            Bottom Navbars
+            <ul className="list-disc list-inside">
+              <li>
+                <Link
+                  to="/botnavbar/default"
+                  className="text-blue-500 hover:underline"
+                >
+                  Default
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/botnavbar/rounded"
+                  className="text-blue-500 hover:underline"
+                >
+                  Rounded
+                </Link>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div className="my-4">
+        <h3 className="text-2xl mb-4">Footers</h3>
+        <ul className="list-disc ml-8">
+          <li>
+            <Link
+              to="/footer/default"
+              className="text-blue-500 hover:underline"
+            >
+              Default
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
