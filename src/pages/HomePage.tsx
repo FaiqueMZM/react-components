@@ -65,8 +65,8 @@ const HomePage: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/stats/simple" className="text-blue-500 hover:underline">
-              Simple
+            <Link to="/stats/logo" className="text-blue-500 hover:underline">
+              With Logo
             </Link>
           </li>
         </ul>
