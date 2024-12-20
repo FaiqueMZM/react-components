@@ -82,6 +82,11 @@ const HomePage: React.FC = () => {
               Default
             </Link>
           </li>
+          <li>
+            <Link to="/logoCloud/big" className="text-blue-500 hover:underline">
+              Big Cloud
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="my-4">
