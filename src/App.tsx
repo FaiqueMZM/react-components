@@ -6,6 +6,7 @@ import BotNavbarPage from "./pages/BotNavBarPage";
 import HomePage from "./pages/HomePage";
 import FooterPage from "./pages/FooterPage";
 import StatsPage from "./pages/StatsPage";
+import LogoCloudPage from "./pages/LogoCloudPage";
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <Route path="/botnavbar/:variation" element={<BotNavbarPage />} />
           <Route path="/footer/:variation" element={<FooterPage />} />
           <Route path="/stats/:variation" element={<StatsPage />} />
+          <Route path="/logoCloud/:variation" element={<LogoCloudPage />} />
         </Routes>
       </div>
     </Router>

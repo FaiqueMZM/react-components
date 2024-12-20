@@ -72,6 +72,19 @@ const HomePage: React.FC = () => {
         </ul>
       </div>
       <div className="my-4">
+        <h3 className="text-2xl mb-4">Logo Cloud</h3>
+        <ul className="list-disc ml-8">
+          <li>
+            <Link
+              to="/logoCloud/default"
+              className="text-blue-500 hover:underline"
+            >
+              Default
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="my-4">
         <h3 className="text-2xl mb-4">Footers</h3>
         <ul className="list-disc ml-8">
           <li>
