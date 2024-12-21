@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const BigCloud: React.FC = () => {
   const logos = [
@@ -15,18 +15,6 @@ const BigCloud: React.FC = () => {
     "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-11.png",
     "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-12.png",
   ];
-
-  const itemsPerPage = 4; // number of logos to display per page in mobile view
-  const [currentPage, setCurrentPage] = useState(0);
-
-  // get logos for the current page (mobile view)
-  const currentLogos = logos.slice(
-    currentPage * itemsPerPage,
-    (currentPage + 1) * itemsPerPage
-  );
-
-  // calculate total pages for mobile view
-  const totalPages = Math.ceil(logos.length / itemsPerPage);
 
   return (
     <section className="py-10 bg-white sm:py-16 lg:py-10">
@@ -51,8 +39,8 @@ const BigCloud: React.FC = () => {
         </div>
 
         {/* mobile view */}
-        <div className="grid items-center max-w-4xl grid-cols-2 mx-auto mt-12 md:hidden gap-x-10 gap-y-16">
-          {currentLogos.map((logo, index) => (
+        <div className="grid items-center max-w-4xl grid-cols-3 mx-auto mt-12 md:hidden gap-x-6 gap-y-10">
+          {logos.map((logo, index) => (
             <div key={index}>
               <img
                 className="object-contain w-full h-8 mx-auto"
@@ -60,19 +48,6 @@ const BigCloud: React.FC = () => {
                 alt={`Logo ${index + 1}`}
               />
             </div>
-          ))}
-        </div>
-
-        {/* pagination */}
-        <div className="flex items-center justify-center mt-10 space-x-3 md:hidden">
-          {Array.from({ length: totalPages }).map((_, index) => (
-            <div
-              key={index}
-              onClick={() => setCurrentPage(index)}
-              className={`w-2.5 h-2.5 rounded-full cursor-pointer ${
-                index === currentPage ? "bg-blue-600" : "bg-gray-300"
-              }`}
-            ></div>
           ))}
         </div>
 
