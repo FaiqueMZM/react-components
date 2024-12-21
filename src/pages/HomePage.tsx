@@ -105,6 +105,11 @@ const HomePage: React.FC = () => {
               Detailed
             </Link>
           </li>
+          <li>
+            <Link to="/faq/accordion" className="text-blue-500 hover:underline">
+              Accordion
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="my-4">

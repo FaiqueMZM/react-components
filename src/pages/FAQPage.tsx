@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import DetailedFAQ from "../components/FAQ/DetailedFAQ";
+import AccordionFAQ from "../components/FAQ/AccordionFAQ";
 
 const FAQPage: React.FC = () => {
   const { variation } = useParams<{ variation: string }>();
@@ -8,6 +9,8 @@ const FAQPage: React.FC = () => {
   switch (variation) {
     case "detailed":
       return <DetailedFAQ />;
+    case "accordion":
+      return <AccordionFAQ />;
     default:
       return (
         <div className="text-red-500 text-center mt-4">
