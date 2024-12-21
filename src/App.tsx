@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import FooterPage from "./pages/FooterPage";
 import StatsPage from "./pages/StatsPage";
 import LogoCloudPage from "./pages/LogoCloudPage";
+import FAQPage from "./pages/FAQPage";
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/footer/:variation" element={<FooterPage />} />
           <Route path="/stats/:variation" element={<StatsPage />} />
           <Route path="/logoCloud/:variation" element={<LogoCloudPage />} />
+          <Route path="/faq/:variation" element={<FAQPage />} />
         </Routes>
       </div>
     </Router>

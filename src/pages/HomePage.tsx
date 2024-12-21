@@ -98,6 +98,16 @@ const HomePage: React.FC = () => {
         </ul>
       </div>
       <div className="my-4">
+        <h3 className="text-2xl mb-4">FAQs</h3>
+        <ul className="list-disc ml-8">
+          <li>
+            <Link to="/faq/detailed" className="text-blue-500 hover:underline">
+              Detailed
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="my-4">
         <h3 className="text-2xl mb-4">Footers</h3>
         <ul className="list-disc ml-8">
           <li>
