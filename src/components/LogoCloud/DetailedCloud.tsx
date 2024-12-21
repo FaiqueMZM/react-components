@@ -23,7 +23,7 @@ const DetailedCloud: React.FC = () => {
             </div>
 
             <div className="lg:col-span-3 xl:col-span-4">
-              <div className="grid items-center max-w-4xl grid-cols-2 gap-x-10 gap-y-16 mx-auto sm:grid-cols-3 lg:grid-cols-4">
+              <div className="grid items-center max-w-4xl grid-cols-3 gap-x-6 gap-y-10 mx-auto sm:grid-cols-3 lg:grid-cols-4">
                 <div>
                   <img
                     className="object-contain w-full h-6 mx-auto"
