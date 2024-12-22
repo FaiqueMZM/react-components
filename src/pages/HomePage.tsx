@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
                 to="/navbar/default"
                 className="text-blue-500 hover:underline"
               >
-                Default
+                Basic
               </Link>
             </li>
             <li>
@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
                     to="/botnavbar/default"
                     className="text-blue-500 hover:underline"
                   >
-                    Default
+                    Basic
                   </Link>
                 </li>
                 <li>
@@ -61,6 +61,32 @@ const HomePage: React.FC = () => {
           </ul>
         </div>
         <div className="py-2">
+          <h3 className="text-2xl mb-4">Hero</h3>
+          <ul className="list-disc ml-8">
+            <li>
+              <Link
+                to="/hero/default"
+                className="text-blue-500 hover:underline"
+              >
+                Basic
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/hero/overlay"
+                className="text-blue-500 hover:underline"
+              >
+                Overlay design
+              </Link>
+            </li>
+            <li>
+              <Link to="/hero/image" className="text-blue-500 hover:underline">
+                Image
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="py-2">
           <h3 className="text-2xl mb-4">Stats</h3>
           <ul className="list-disc ml-8">
             <li>
@@ -68,7 +94,7 @@ const HomePage: React.FC = () => {
                 to="/stats/default"
                 className="text-blue-500 hover:underline"
               >
-                Default
+                Basic
               </Link>
             </li>
             <li>
@@ -86,7 +112,7 @@ const HomePage: React.FC = () => {
                 to="/logoCloud/default"
                 className="text-blue-500 hover:underline"
               >
-                Default
+                Basic
               </Link>
             </li>
             <li>
@@ -136,7 +162,7 @@ const HomePage: React.FC = () => {
                 to="/footer/default"
                 className="text-blue-500 hover:underline"
               >
-                Default
+                Basic
               </Link>
             </li>
             <li>
