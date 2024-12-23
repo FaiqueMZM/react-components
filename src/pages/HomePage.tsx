@@ -84,6 +84,11 @@ const HomePage: React.FC = () => {
                 Image
               </Link>
             </li>
+            <li>
+              <Link to="/hero/video" className="text-blue-500 hover:underline">
+                Video
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="py-2">

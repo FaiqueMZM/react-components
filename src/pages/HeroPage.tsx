@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import DefaultHero from "../components/Hero/DefaultHero";
 import OverlayHero from "../components/Hero/OverlayHero";
 import ImageHero from "../components/Hero/ImageHero";
+import VideoHero from "../components/Hero/VideoHero";
 
 const HeroPage: React.FC = () => {
   const { variation } = useParams<{ variation: string }>();
@@ -14,6 +15,8 @@ const HeroPage: React.FC = () => {
       return <OverlayHero />;
     case "image":
       return <ImageHero />;
+    case "video":
+      return <VideoHero />;
     default:
       return (
         <div className="text-red-500 text-center mt-4">
