@@ -22,8 +22,7 @@ const SimpleHero: React.FC = () => {
                 <br className="hidden md:block" />
                 jumps over a{" "}
                 <span className="relative inline-block">
-                  lazy dog{" "}
-                  <div className="w-full h-3 -mt-3 bg-deep-purple-accent-400" />
+                  lazy dog <div className="w-full h-3 -mt-3 bg-purple-600" />
                 </span>
               </h2>
               <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
@@ -36,11 +35,11 @@ const SimpleHero: React.FC = () => {
                   placeholder="Email"
                   required
                   type="text"
-                  className="flex-grow w-full h-12 px-4 mb-3 text-white transition duration-200 bg-transparent border-2 border-gray-400 rounded appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-200 focus:outline-none focus:shadow-outline"
+                  className="flex-grow w-full h-12 px-4 mb-3 text-white transition duration-200 bg-transparent border-2 border-gray-400 rounded appearance-none md:mr-2 md:mb-0 focus:border-purple-200 focus:outline-none focus:shadow-outline"
                 />
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                 >
                   Subscribe
                 </button>
@@ -52,7 +51,7 @@ const SimpleHero: React.FC = () => {
               <a
                 href="/"
                 aria-label="Scroll down"
-                className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
+                className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-400 hover:border-teal-400 hover:shadow hover:scale-110"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
