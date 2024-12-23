@@ -4,6 +4,7 @@ import DefaultHero from "../components/Hero/DefaultHero";
 import OverlayHero from "../components/Hero/OverlayHero";
 import ImageHero from "../components/Hero/ImageHero";
 import VideoHero from "../components/Hero/VideoHero";
+import SimpleHero from "../components/Hero/SimpleHero";
 
 const HeroPage: React.FC = () => {
   const { variation } = useParams<{ variation: string }>();
@@ -11,6 +12,8 @@ const HeroPage: React.FC = () => {
   switch (variation) {
     case "default":
       return <DefaultHero />;
+    case "simple":
+      return <SimpleHero />;
     case "overlay":
       return <OverlayHero />;
     case "image":

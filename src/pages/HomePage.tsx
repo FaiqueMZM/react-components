@@ -72,6 +72,11 @@ const HomePage: React.FC = () => {
               </Link>
             </li>
             <li>
+              <Link to="/hero/simple" className="text-blue-500 hover:underline">
+                Simple
+              </Link>
+            </li>
+            <li>
               <Link
                 to="/hero/overlay"
                 className="text-blue-500 hover:underline"
