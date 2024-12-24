@@ -17,9 +17,7 @@ const ImageHero: React.FC = () => {
                   The quick, brown fox
                   <br className="hidden md:block" />
                   jumps over{" "}
-                  <span className="inline-block text-deep-purple-accent-400">
-                    a lazy dog
-                  </span>
+                  <span className="inline-block text-blue-600">a lazy dog</span>
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -30,14 +28,14 @@ const ImageHero: React.FC = () => {
               <div className="flex flex-col items-center md:flex-row">
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-purple-600 hover:bg-purple-800 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-blue-600 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
                 >
                   Apply Now
                 </a>
                 <a
                   href="/"
                   aria-label=""
-                  className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                  className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-blue-700"
                 >
                   Learn more
                 </a>
@@ -83,7 +81,7 @@ const ImageHero: React.FC = () => {
                 Everything you
                 <br className="hidden md:block" />
                 can imagine{" "}
-                <span className="inline-block text-purple-500">is real</span>
+                <span className="inline-block text-blue-600">is real</span>
               </h2>
               <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -93,14 +91,14 @@ const ImageHero: React.FC = () => {
               <div className="flex items-center">
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-600 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
                 >
                   Get started
                 </a>
                 <a
                   href="/"
                   aria-label=""
-                  className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-purple-700"
+                  className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-blue-700"
                 >
                   Learn more
                 </a>
