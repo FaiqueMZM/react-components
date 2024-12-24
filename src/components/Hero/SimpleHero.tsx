@@ -22,7 +22,7 @@ const SimpleHero: React.FC = () => {
                 <br className="hidden md:block" />
                 jumps over a{" "}
                 <span className="relative inline-block">
-                  lazy dog <div className="w-full h-3 -mt-3 bg-purple-600" />
+                  lazy dog <div className="w-full h-3 -mt-3 bg-blue-600" />
                 </span>
               </h2>
               <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
@@ -39,7 +39,7 @@ const SimpleHero: React.FC = () => {
                 />
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
                 >
                   Subscribe
                 </button>
