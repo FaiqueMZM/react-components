@@ -183,6 +183,14 @@ const HomePage: React.FC = () => {
                 Simple
               </Link>
             </li>
+            <li>
+              <Link
+                to="/footer/oneline"
+                className="text-blue-500 hover:underline"
+              >
+                One line
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
