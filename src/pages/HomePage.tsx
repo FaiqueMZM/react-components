@@ -162,6 +162,11 @@ const HomePage: React.FC = () => {
                 Accordion
               </Link>
             </li>
+            <li>
+              <Link to="/faq/box" className="text-blue-500 hover:underline">
+                Box Accordion
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="py-2">
