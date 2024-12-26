@@ -35,7 +35,8 @@ const BoxAccordionFAQ: React.FC = () => {
             Frequently Asked Questions
           </h2>
           <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do so
+            mer ciras
           </p>
         </div>
 
