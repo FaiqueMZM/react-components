@@ -1,6 +1,7 @@
 import React from "react";
 import { DefaultNav, StickyNav, TransparentNav } from "../components/NavBar";
 import { useParams } from "react-router-dom";
+import ImageNav from "../components/NavBar/ImageNav";
 
 const NavbarPage: React.FC = () => {
   const { variation } = useParams<{ variation: string }>();
@@ -12,6 +13,8 @@ const NavbarPage: React.FC = () => {
       return <StickyNav />;
     case "transparent":
       return <TransparentNav />;
+    case "image":
+      return <ImageNav />;
     default:
       return (
         <div className="text-red-500 text-center mt-4">

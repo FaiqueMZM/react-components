@@ -38,6 +38,14 @@ const HomePage: React.FC = () => {
               </Link>
             </li>
             <li>
+              <Link
+                to="/navbar/image"
+                className="text-blue-500 hover:underline"
+              >
+                Image
+              </Link>
+            </li>
+            <li>
               Bottom Navbars
               <ul className="list-disc list-inside">
                 <li>
