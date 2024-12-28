@@ -149,6 +149,14 @@ const HomePage: React.FC = () => {
                 Detailed
               </Link>
             </li>
+            <li>
+              <Link
+                to="/logoCloud/carousel"
+                className="text-blue-500 hover:underline"
+              >
+                Carousel
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="py-2">
