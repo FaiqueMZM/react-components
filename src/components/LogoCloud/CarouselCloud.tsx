@@ -53,16 +53,26 @@ const DefaultCloud: React.FC = () => {
 
   useEffect(() => {
     swiperRef.current = new SwiperCore(".swiper", {
-      slidesPerView: "auto", // Display slides based on content width
-      loop: true, // Infinite loop
+      slidesPerView: "auto",
+      loop: true,
       autoplay: {
-        delay: 0, // No delay between slides
-        disableOnInteraction: false, // Keep autoplay running even after interaction
+        delay: 0,
+        disableOnInteraction: false,
       },
-      speed: 4000, // Adjust the speed of the scrolling animation (in ms)
-      spaceBetween: 50, // Space between the logos
-      direction: "horizontal", // Horizontal scrolling
-      freeMode: true, // Allows continuous scrolling without pauses
+      speed: 4000,
+      spaceBetween: 50,
+      direction: "horizontal",
+      freeMode: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        900: {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+        },
+      },
     });
 
     return () => {
