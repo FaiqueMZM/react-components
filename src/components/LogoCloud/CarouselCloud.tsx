@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import SwiperCore from "swiper";
 import { Autoplay } from "swiper/modules";
 
-// Enable Swiper's Autoplay module
+// swiper autoplay module
 SwiperCore.use([Autoplay]);
 
 const DefaultCloud: React.FC = () => {
@@ -53,7 +53,7 @@ const DefaultCloud: React.FC = () => {
 
   useEffect(() => {
     swiperRef.current = new SwiperCore(".swiper", {
-      slidesPerView: "auto",
+      slidesPerView: "auto", // default slides per view
       loop: true,
       autoplay: {
         delay: 0,
@@ -65,10 +65,12 @@ const DefaultCloud: React.FC = () => {
       freeMode: true,
       breakpoints: {
         320: {
+          // for screen size >=320
           slidesPerView: 3,
           spaceBetween: 10,
         },
         900: {
+          // for screen size >=900
           slidesPerView: "auto",
           spaceBetween: 30,
         },
