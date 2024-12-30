@@ -23,7 +23,7 @@ const HeroPage: React.FC = () => {
     default:
       return (
         <div className="text-red-500 text-center mt-4">
-          Footer variation not found!
+          Hero variation not found!
         </div>
       );
   }

@@ -17,7 +17,7 @@ const FAQPage: React.FC = () => {
     default:
       return (
         <div className="text-red-500 text-center mt-4">
-          Footer variation not found!
+          FAQ variation not found!
         </div>
       );
   }

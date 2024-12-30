@@ -14,7 +14,7 @@ const StatsPage: React.FC = () => {
     default:
       return (
         <div className="text-red-500 text-center mt-4">
-          Footer variation not found!
+          Stats variation not found!
         </div>
       );
   }
