@@ -1,6 +1,6 @@
 # React Components App (ReactJS + TypeScript + TailwindCSS)
 
-Mock React Application with different types of reusable components implemented using ReactJS, TypeScript, and TailwindCSS.
+React Component Application with different types of reusable components that can be used to build various web pages. Implemented by using ReactJS, TypeScript, and TailwindCSS.
 
 ## Additional Dependencies
 
