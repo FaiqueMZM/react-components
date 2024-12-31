@@ -17,6 +17,7 @@ const ImageNav: React.FC = () => {
   return (
     <>
       <nav className="bg-white bg-[url('/src/assets/topography.svg')] border-gray-200">
+        // add path of navbar background image in tailwind config
         <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="#"
