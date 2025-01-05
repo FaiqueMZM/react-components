@@ -5,6 +5,7 @@ import OverlayHero from "../components/Hero/OverlayHero";
 import ImageHero from "../components/Hero/ImageHero";
 import VideoHero from "../components/Hero/VideoHero";
 import SimpleHero from "../components/Hero/SimpleHero";
+import ImageOverlayHero from "../components/Hero/ImageOverlayHero";
 
 const HeroPage: React.FC = () => {
   const { variation } = useParams<{ variation: string }>();
@@ -20,6 +21,9 @@ const HeroPage: React.FC = () => {
       return <ImageHero />;
     case "video":
       return <VideoHero />;
+    case "imageOverlay":
+      return <ImageOverlayHero />;
+    case "videoOverlay":
     default:
       return (
         <div className="text-red-500 text-center mt-4">

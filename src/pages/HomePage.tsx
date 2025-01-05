@@ -102,6 +102,14 @@ const HomePage: React.FC = () => {
                 Video
               </Link>
             </li>
+            <li>
+              <Link
+                to="/hero/imageOverlay"
+                className="text-blue-500 hover:underline"
+              >
+                Image Overlay
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="py-2">
