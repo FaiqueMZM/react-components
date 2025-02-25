@@ -9,7 +9,7 @@ import StatsPage from "./pages/StatsPage";
 import LogoCloudPage from "./pages/LogoCloudPage";
 import FAQPage from "./pages/FAQPage";
 import HeroPage from "./pages/HeroPage";
-import Button from "./components/Button/Button";
+import ButtonPage from "./pages/ButtonPage";
 
 const App: React.FC = () => {
   return (
@@ -26,7 +26,7 @@ const App: React.FC = () => {
           <Route path="/stats/:variation" element={<StatsPage />} />
           <Route path="/logoCloud/:variation" element={<LogoCloudPage />} />
           <Route path="/faq/:variation" element={<FAQPage />} />
-          <Route path="/button/:variation" element={<Button />} />
+          <Route path="/button/:variation" element={<ButtonPage />} />
           <Route path="/footer/:variation" element={<FooterPage />} />
         </Routes>
       </div>
